@@ -283,7 +283,9 @@ section .title::after{
 .projects .serv-content .card .box a{
     color: #111;
 }
-
+.projects .serv-content .card p{
+    color: #111;
+}
 .projects .serv-content .card .box .text:hover {
     color: #fff;
 }
@@ -330,12 +332,15 @@ section .title::after{
 .skills .title::after{
     content: "what i know";
 }
-
+.skills .title{
+    color: #111;
+}
 .skills .skills-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: start;
+    /* color: #111; */
 }
 
 .skills .skills-content .left .bars{
@@ -350,6 +355,7 @@ section .title::after{
 .skills .skills-content .left span{
     font-weight: 500;
     font-size: 18px;
+    text-decoration: solid;
 }
 
 .skills .skills-content .left .info i{
