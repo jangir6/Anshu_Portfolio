@@ -56,6 +56,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    color: #111;
 }
 section .title::before{
     content: "";
@@ -240,6 +241,10 @@ section .title::after{
 .about .about-content .right .text span{
     color: rgb(184, 81, 81);
 }
+.about .about-content .right p span{
+    color: rgb(184, 81, 81);
+    font-weight: bold;
+}
 .about .about-content .right p{
     text-align: justify;
 }
@@ -269,7 +274,9 @@ section .title::after{
 .projects, .team, h2{
     color: #fff;
 } 
-
+.projects h2{
+    color: #fff;
+}
 .projects .title::before,
 .teams .title::before{
     background: #fff;
@@ -334,11 +341,12 @@ section .title::after{
 .skills .title{
     color: #111;
 }
-.skills .skills-content .left .text{
+.skills .skills-content .left .bars .info i span{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: start;
+    font-family: 'Poppins', sans-serif;
     /* color: #111; */
 }
 
@@ -351,7 +359,7 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .left span{
+.skills .skills-content .left i span{
     font-weight: 500;
     font-size: 18px;
     text-decoration: solid;
@@ -361,6 +369,14 @@ section .title::after{
     font-size: 5px;
 }
 
+.skills .skills-content .right .bars .info i span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    /* color: #111; */
+}
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
@@ -378,6 +394,14 @@ section .title::after{
     font-size: 18px;
 }
 
+.skills .skills-content .right1 .bars .info i span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    /* color: #111; */
+}
 
 .skills .skills-content .right1 .bars{
     margin-bottom: 15px;
@@ -396,6 +420,14 @@ section .title::after{
     font-size: 18px;
 }
 
+.skills .skills-content .right2 .bars .info i span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    /* color: #111; */
+}
 
 .skills .skills-content .right2 .bars{
     margin-bottom: 15px;
@@ -418,6 +450,9 @@ section .title::after{
 /* contact section styling */
 .contact {
     background: rgb(5, 55, 121);
+    color: #fff;
+}
+.contact h2{
     color: #fff;
 }
 .contact .title::after{
