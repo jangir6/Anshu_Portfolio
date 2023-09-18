@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -25,6 +26,7 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
 
 /* all similar content styling codes */
 section{
@@ -77,6 +79,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -89,8 +92,6 @@ section .title::after{
 .navbar.sticky{
     padding: 15px 0;
     background:rgba(5, 55, 121, 0.8);
-    /* rgb(5, 55, 121); */
-    /* background: rgb(64, 58, 118); */
 }
 .navbar .max-width{
     display: flex;
@@ -125,9 +126,7 @@ section .title::after{
 .navbar .menu li a:hover{
     color:rgb(184, 81, 81);
 }
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
+
 
 /* menu btn styling */
 .menu-btn{
@@ -217,6 +216,7 @@ section .title::after{
     background: none;
 }
 
+
 /* about section styling */
 .about .title::after{
     content: "who i am";
@@ -266,14 +266,11 @@ section .title::after{
 .projects, .teams{
     background: rgb(5, 55, 121);
     color:#111;
-    /* background: #111; */
-    
+}    
 .projects, .team, h2{
     color: #fff;
 } 
-   
-/* color: cadetblue; */
-}
+
 .projects .title::before,
 .teams .title::before{
     background: #fff;
@@ -287,10 +284,10 @@ section .title::after{
     color: #111;
 }
 
-/* .projects .serv-content .card .box a:hover{
-    color: #fff;
-} */
 .projects .serv-content .card .box .text:hover {
+    color: #fff;
+}
+.projects .serv-content .card:hover p{
     color: #fff;
 }
 .projects .serv-content .card{
@@ -327,74 +324,95 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+
 /* skills section styling */
 
 .skills .title::after{
     content: "what i know";
 }
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
+
 .skills .skills-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: start;
 }
-.skills .skills-content .left p{
-    text-align: justify;
+
+.skills .skills-content .left .bars{
+    margin-bottom: 15px;
 }
-.skills .skills-content .left a{
-    display: inline-block;
-    background: rgb(184, 81, 81);
-    color: #fff;
-    font-size: 18px;
+.skills .skills-content .left .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .left span{
     font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid rgb(184, 81, 81);
-    transition: all 0.3s ease;
+    font-size: 18px;
 }
-.skills .skills-content .left a:hover{
-    color: rgb(184, 81, 81);
-    background: none;
+
+.skills .skills-content .left .info i{
+    font-size: 5px;
 }
+
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
-    align-items: center;
+    align-items: normal;
     justify-content: space-between;
+}
+.skills .skills-content .right .info i{
+    font-size: 5px;
 }
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
+
+
+.skills .skills-content .right1 .bars{
+    margin-bottom: 15px;
 }
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: rgb(184, 81, 81);
+.skills .skills-content .right1 .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: normal;
+    justify-content: space-between;
+}
+.skills .skills-content .right1 .info i{
+    font-size: 5px;
+}
+.skills .skills-content .right1 span{
+    font-weight: 500;
+    font-size: 18px;
 }
 
+
+.skills .skills-content .right2 .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right2 .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: normal;
+    justify-content: space-between;
+}
+.skills .skills-content .right2 .info i{
+    font-size: 5px;
+}
+.skills .skills-content .right2 span{
+    font-weight: 500;
+    font-size: 18px;
+}
 
 
 /* contact section styling */
 .contact {
     background: rgb(5, 55, 121);
-    /* rgb(205, 114, 205);
-    rgba(226, 220, 220, 0.3); */
-    /* padding: 15px 23px; */
     color: #fff;
 }
 .contact .title::after{
@@ -491,6 +509,8 @@ section .title::after{
   color:rgb(226, 169, 169);
   background: none;
 }
+
+
 /* footer section styling */
 footer{
     background: #fff;
