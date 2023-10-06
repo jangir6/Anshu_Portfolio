@@ -45,6 +45,7 @@ $(document).ready(function(){
         strings: ["Web Developer ", "UI/UX", "Web Designer","Programmer","Quick Learner"],
         typeSpeed: 100,
         backSpeed: 60,
+        // hi
         loop: true
     });
 
